@@ -1,28 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+import Home from './components/home';
+import './App.css'
 
+const App = () => (
+  <Router>
+    <div id="botter">
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div>
-          <input type='text' placehold='请输入产品名或商品信息'/><i>小车</i>
-          <ul>
-            <li>精选</li>
-            <li>户外运动</li>
-            <li>休闲鞋服</li>
-            <li>饰品手表</li>
-            <li>饰品营养</li>
-            <li>居家百货</li>
-            <li>箱包手袋</li>
-            <li>个人护理</li>
-            <li>电猫数码</li>
-            <li>其他分类</li>
-          </ul>
-        </div> 
-      </div>
-    );
-  }
-}
+      <Route exact path="/" component={Home}/>
+      <Route path="/Detail" component={Detail}/>
+      <Route path="/topics" component={Home}/>
+
+      <ul id='bot_ul'>
+        <li ><Link to="/"><i className="iconfont">&#xe62b;</i>首页</Link></li>
+        <li ><Link to="/Detail"><i className="iconfont">&#xe6f4;</i>发现</Link></li>
+        <li ><Link to="/topics"><i className="iconfont">&#xe6a6;</i>精选</Link></li>
+        <li ><Link to="/topics"><i className="iconfont">&#xe6a0;</i>我的</Link></li>
+      </ul>
+
+    </div>
+  </Router>
+)
 
 export default App;
