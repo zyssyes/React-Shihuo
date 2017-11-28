@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'antd';
 import 'antd/dist/antd.css'
-import './Detail.css';
+import './index.css';
 import Icon from 'antd/lib/icon';
 import axios from 'axios';
 class Detail extends Component {
@@ -24,7 +24,11 @@ class Detail extends Component {
   }
   render() {
     return (
+<<<<<<< HEAD:shihuo/src/Detail.js
       <div id="Detail">
+=======
+      <div className="Detail" id='Detail'>
+>>>>>>> dcb378a7d7f8f59769b4a43f3a1d2d6eda4a7e99:shihuo/src/components/Detail/index.js
         <div className='loop'>
                 <Carousel autoplay>
                   <div><img src='../img/loop1.jpg' alt='图片' /></div>

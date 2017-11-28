@@ -1,0 +1,139 @@
+#Detail .body {
+  font: 12px/1.5 Helvetica,sans-serif; }
+
+#Detail .ant-carousel .slick-slide {
+  text-align: center;
+  height: 134px;
+  line-height: 134px;
+  overflow: hidden; }
+
+#Detail .ant-carousel .slick-slide img {
+  height: 134px; }
+
+#Detail .icon {
+  height: 70px;
+  width: 100%; }
+
+#Detail .icon .list {
+  float: left;
+  width: 25%;
+  height: 70px;
+  color: #666;
+  margin: 10px auto;
+  text-align: center;
+  border-bottom: 10px solid #f7f7f7; }
+
+#Detail .icon .list .sml_icon {
+  font-size: 28px; }
+
+#Detail .icon .list .sml_icon span {
+  font-size: 14px; }
+
+#Detail .title p {
+  padding: 10px;
+  font-size: 14px; }
+
+#Detail .title .title_loop {
+  height: 62px;
+  width: 100%; }
+
+#Detail .title .title_loop .title_div {
+  float: left;
+  overflow: hidden;
+  width: 125px;
+  position: relative; }
+
+#Detail .title .title_loop .title_div img {
+  float: left;
+  width: 125px;
+  height: 74px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px 5px; }
+
+#Detail .title .title_loop .title_div .opt {
+  width: 125px;
+  height: 74px;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background: #000;
+  font-size: 12px; }
+
+#Detail .title .title_loop .title_div .opt p {
+  width: 125px;
+  height: 74px; }
+
+#Detail .all {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 900; }
+
+#Detail .all li {
+  float: left;
+  margin-left: 10px; }
+
+#Detail .all li a {
+  color: #000;
+  padding-bottom: 10px; }
+
+#Detail .all li a:hover {
+  color: red;
+  border-bottom: 2px solid red; }
+
+#Detail .detail_div {
+  clear: both;
+  height: 267px;
+  width: 90%;
+  margin-right: 5%;
+  position: relative; }
+
+#Detail .detail_div .top {
+  height: 34px; }
+
+#Detail .detail_div .top .left {
+  float: left; }
+
+#Detail .detail_div .top .left img {
+  height: 34px;
+  width: 34px;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+#Detail .detail_div .top .right {
+  width: 280px;
+  height: 34px;
+  float: right; }
+
+#Detail .detail_div .top .right p {
+  height: 19px;
+  text-align: left; }
+
+#Detail .detail_div .top .right .data {
+  height: 18px;
+  text-align: left;
+  color: #ccc;
+  font-size: 12px; }
+
+#Detail .detail_div .title {
+  text-align: left;
+  margin-top: 10px; }
+
+#Detail .detail_div .img1 {
+  width: 311px;
+  height: 140px;
+  margin-left: 20px; }
+
+#Detail .detail_div .praise {
+  position: absolute;
+  left: 30px;
+  top: 224px; }
+
+#Detail .detail_div .ellipsis {
+  position: absolute;
+  left: 60px;
+  top: 224px; }

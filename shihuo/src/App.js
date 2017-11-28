@@ -8,19 +8,24 @@ import {
   Redirect
 } from 'react-router-dom'
 import Home from './components/home';
-import Detail from './Detail'
-import './App.css'
+import Detail from './components/Detail';
+import User from './components/user';
+import './App.css';
+
 
 const App = () => (
   <Router>
     <div id="botter">
+
       <Switch>
         <Redirect exact from="/" to="/home" />
         <Route  path="/home" component={Home}/>
         <Route  path="/Detail" component={Detail}/>
         <Route  path="/topics" component={Home}/>
-        <Route  path="/user" component={Home}/>
+        <Route  path="/user" component={User}/>
       </Switch>
+
+
       <ul id='bot_ul'>
         <li ><NavLink activeClassName="bg" to="/home"><i className="iconfont">&#xe62b;</i><p>首页</p></NavLink></li>
         <li ><NavLink activeClassName="bg" to="/Detail"><i className="iconfont">&#xe6f4;</i><p>发现</p></NavLink></li>
