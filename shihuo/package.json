@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-addons-css-transition-group": "^15.0.3",
+    "axios": "^0.17.1",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",
     "react": "^16.1.1",
@@ -19,5 +20,15 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "/find": {
+      "target": "http://m.shihuo.cn",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/find": "/find"
+      },
+      "ws": true
+    }
   }
 }
