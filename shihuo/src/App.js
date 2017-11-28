@@ -7,6 +7,8 @@ import {
 import Home from './components/home';
 import Detail from './components/Detail';
 import User from './components/user';
+import Regist from './components/regist';
+import Login from './components/login';
 import './App.css';
 
 
@@ -18,7 +20,8 @@ const App = () => (
       <Route path="/Detail" component={Detail}/>
       <Route path="/topics" component={Home}/>
       <Route path="/user" component={User}/>
-
+      <Route path="/regist" component={Regist}/>
+      <Route path="/login" component={Login}/>
       <ul id='bot_ul'>
         <li ><Link to="/"><i className="iconfont">&#xe62b;</i>首页</Link></li>
         <li ><Link to="/Detail"><i className="iconfont">&#xe6f4;</i>发现</Link></li>
