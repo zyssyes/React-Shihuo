@@ -24,7 +24,7 @@ class Detail extends Component {
   }
   render() {
     return (
-      <div className="Detail">
+      <div id="Detail">
         <div className='loop'>
                 <Carousel autoplay>
                   <div><img src='../img/loop1.jpg' alt='图片' /></div>

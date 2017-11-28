@@ -1,0 +1,21 @@
+#home #search_input {
+  width: 6.2rem;
+  height: 0.31rem;
+  border: 0;
+  background: #eee;
+  margin: 10px;
+  margin-left: 15px;
+  padding: 20px; }
+
+#home .cart {
+  font-size: 22px;
+  margin-top: 4px; }
+
+#home div.ant-tabs-bar {
+  margin-bottom: 0; }
+
+#home #img1 {
+  width: 100%; }
+
+#home #img2 {
+  width: 100%; }
