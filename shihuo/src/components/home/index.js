@@ -31,14 +31,13 @@ class Home extends React.Component {
           <TabPane tab="精选" key="1">
           	 <div className='loop'>
                 <Carousel autoplay>
-                  <div><img src='http://shihuo.hupucdn.com/haitaoIndex/201711/2709/226cbe2eb4f71678eb3f68b2a45ccb1e.jpg' alt='图片' /></div>
-                  <div><img src='http://shihuo.hupucdn.com/haitaoIndex/201711/1410/aae9adfaf5d5ed5b88bd8246c2207e1f.jpg' alt='图片' /></div>
-                  <div><img src='http://shihuo.hupucdn.com/haitaoIndex/201711/2709/226cbe2eb4f71678eb3f68b2a45ccb1e.jpg' alt='图片' /></div>
-                  <div><img src='http://shihuo.hupucdn.com/haitaoIndex/201710/2615/844ccfdd6385214a9ee429aa79c1fc8d.jpg' alt='图片' /></div>
-                  <div><img src='http://shihuo.hupucdn.com/haitaoIndex/201711/2709/2ac6a236d8167d46a4a3697056c17070.jpg' alt='图片' /></div>
+                  <div><img src='../img/1.jpg' alt='图片' /></div>
+                  <div><img src='../img/2.jpg' alt='图片' /></div>
+                  <div><img src='../img/4.jpg' alt='图片' /></div>
+                  <div><img src='../img/5.jpg' alt='图片' /></div>
                 </Carousel>
-                <img id='img1'src="http://sh1.hoopchina.com.cn/fis_static/shihuomobile/static/haitao/images/hr_b09db04.png" alt="" />
-                <img id='img2' src="http://shihuo.hupucdn.com/appHaitao/201711/2810/6b23d0d27b7eab474118380835ca9dc5.jpg?imageView2/2/w/750/h/350/interlace/1" alt=""/>
+                <img id='img1'src="../img/6.jpg" alt="" />
+                <img id='img2' src="../img/7.jpg " alt=""/>
         	</div>
           </TabPane>
           <TabPane tab="户外运动" key="2">111</TabPane>
