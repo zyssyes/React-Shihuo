@@ -32,6 +32,15 @@
         "^/find": "/find"
       },
       "ws": true
+    },
+  "/haitao": {
+    "target": "http://m.shihuo.cn",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/haitao": "/haitao"
+    },
+    "ws": true
     }
   }
+
 }
