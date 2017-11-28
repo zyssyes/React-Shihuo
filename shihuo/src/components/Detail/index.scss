@@ -12,11 +12,13 @@
 .ant-carousel .slick-slide img {
   height:134px;
 }
- .icon{
+
+.icon{
   height: 70px;
   width:100%;
 }
- .icon .list{
+.icon .list{
+
   float: left;
   width: 25%;
   height: 70px;
@@ -25,30 +27,36 @@
   text-align: center;
   border-bottom: 10px solid #f7f7f7;
 }
- .icon .list .sml_icon {
+
+.icon .list .sml_icon {
+
   font-size: 28px;
 }
  .icon .list .sml_icon span{
   font-size: 14px;
 }
 
- .title p{
+.title p{
+
   padding:10px;
   font-size: 14px;
 
 } 
- .title .title_loop{
+
+.title .title_loop{
   height:62px;
   width:100%;
 }
- .title .title_loop .title_div{
+.title .title_loop .title_div{
+
   float: left;
   overflow: hidden;
   width:125px;
   position: relative;
 
 }
- .title .title_loop .title_div img{
+
+.title .title_loop .title_div img{
   float: left;
   width:125px;
   height:74px;
