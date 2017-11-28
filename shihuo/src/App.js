@@ -5,6 +5,7 @@ import {
   Link
 } from 'react-router-dom'
 import Home from './components/home';
+import Detail from './Detail'
 import './App.css'
 
 const App = () => (
