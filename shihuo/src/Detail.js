@@ -3,8 +3,25 @@ import { Carousel } from 'antd';
 import 'antd/dist/antd.css'
 import './Detail.css';
 import Icon from 'antd/lib/icon';
-
+import axios from 'axios';
 class Detail extends Component {
+ constructor() {
+    super();
+    this.state = {
+      Data: []
+    }
+  }
+  componentDidMount() {
+    var that = this;
+    axios.get("/find/mobileList?tag_id=48&param_str=")
+    .then(function(res){
+      console.log(res);
+      that.setState({
+        Data: res.data.data
+        
+      })
+    })
+  }
   render() {
     return (
       <div className="Detail">
@@ -41,10 +58,31 @@ class Detail extends Component {
             <li><a>测评档案</a></li>
             <li><a>数码</a></li>
           </ul>
+          <div className='detail'>
+            {
+               this.state.Data.map((item, index)=>{
+                  return (
+                    <div key={index} className='detail_div'>
+                      <div className='top'>
+                        <div className='left'><img src={item.data.avatar}alt='图片'/></div>
+                        <div className='right'>
+                          <p>{item.data.author_name}</p>
+                          <div className='data'>{item.data.date}</div>
+                        </div>
+                      </div>
+                        <div className='title'>{item.data.title}</div>
+                        <img src={item.data.img} alt='图片' className='img1'/>
+                        <div className='praise'><Icon type="heart-o" />{item.data.praise}</div>
+                        <div className='ellipsis'><Icon type="ellipsis" />{item.data.reply_count}</div>
+                    </div>
+                  );
+                })
+            }   
+          </div>
         </div>
       </div>
     );
-  }
+   }
 }
 
 export default Detail;

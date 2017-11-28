@@ -1,3 +1,6 @@
+.body{
+  font: 12px/1.5 Helvetica,sans-serif; 
+}
 .ant-carousel .slick-slide {
   text-align: center;
   height: 134px;
@@ -84,4 +87,59 @@
 .all li a:hover{
   color: red;
   border-bottom: 2px solid red;
+}
+.detail_div{
+  clear: both;
+  height: 267px;
+  width: 90%;
+  margin-right: 5%;
+  position: relative;
+}
+.detail_div .top{
+  height: 34px;
+}
+.detail_div .top .left{
+    float: left;
+}
+.detail_div .top .left img{
+  height:34px;
+  width: 34px;
+
+  margin:10px;
+  border-radius:50%;
+  overflow: hidden; 
+}
+.detail_div .top .right{
+  width: 280px;
+  height: 34px;
+  float: right;
+}
+.detail_div .top .right p{
+  height:19px;
+  text-align: left;
+}
+.detail_div .top .right .data{
+  height: 18px;
+  text-align: left;
+  color: #ccc;
+  font-size: 12px;
+}
+.detail_div .title{
+  text-align: left;
+  margin-top:10px;
+}
+.detail_div  .img1{
+  width: 311px;
+  height: 140px;
+  margin-left: 20px;
+}
+.detail_div .praise{
+  position: absolute;
+  left: 30px;
+  top:224px;
+}
+.detail_div .ellipsis{
+  position: absolute;
+  left: 60px;
+  top:224px;
 }
