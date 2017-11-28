@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'antd';
 import 'antd/dist/antd.css'
-import './Detail.css';
+import './index.css';
 import Icon from 'antd/lib/icon';
 import axios from 'axios';
 class Detail extends Component {

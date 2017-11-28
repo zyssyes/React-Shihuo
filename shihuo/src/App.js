@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import Home from './components/home';
 import Detail from './components/Detail';
+import User from './components/user';
 import './App.css';
 
 
@@ -16,6 +17,7 @@ const App = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/Detail" component={Detail}/>
       <Route path="/topics" component={Home}/>
+      <Route path="/user" component={User}/>
 
       <ul id='bot_ul'>
         <li ><Link to="/"><i className="iconfont">&#xe62b;</i>首页</Link></li>
