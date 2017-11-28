@@ -1,0 +1,26 @@
+#Regist .common-header {
+  height: 40px;
+  background: #f4f4f4;
+  width: 100%;
+  position: relative; }
+
+#Regist .common-header span {
+  margin-left: 15px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 12px;
+  border-left: 1px solid #ca0000;
+  border-top: 1px solid #ca0000;
+  text-indent: -999em;
+  overflow: hidden;
+  overtransform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+#Regist .common-header img {
+  height: 20px;
+  width: 83px;
+  position: absolute;
+  left: 145px;
+  top: 10px; }
