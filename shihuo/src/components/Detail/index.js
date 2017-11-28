@@ -25,6 +25,7 @@ class Detail extends Component {
   render() {
     return (
       <div className="Detail" id='Detail'>
+
         <div className='loop'>
                 <Carousel autoplay>
                   <div><img src='../img/loop1.jpg' alt='图片' /></div>
@@ -70,7 +71,7 @@ class Detail extends Component {
                           <div className='data'>{item.data.date}</div>
                         </div>
                       </div>
-                        <div className='title'>{item.data.title}</div>
+                        <div className='title2'>{item.data.title}</div>
                         <img src={item.data.img} alt='图片' className='img1'/>
                         <div className='praise'><Icon type="heart-o" />{item.data.praise}</div>
                         <div className='ellipsis'><Icon type="ellipsis" />{item.data.reply_count}</div>

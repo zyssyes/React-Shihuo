@@ -12,11 +12,11 @@
 .ant-carousel .slick-slide img {
   height:134px;
 }
-.icon{
+ .icon{
   height: 70px;
   width:100%;
 }
-.icon .list{
+ .icon .list{
   float: left;
   width: 25%;
   height: 70px;
@@ -25,30 +25,30 @@
   text-align: center;
   border-bottom: 10px solid #f7f7f7;
 }
-.icon .list .sml_icon {
+ .icon .list .sml_icon {
   font-size: 28px;
 }
-.icon .list .sml_icon span{
+ .icon .list .sml_icon span{
   font-size: 14px;
 }
 
-.title p{
+ .title p{
   padding:10px;
   font-size: 14px;
 
 } 
-.title .title_loop{
+ .title .title_loop{
   height:62px;
   width:100%;
 }
-.title .title_loop .title_div{
+ .title .title_loop .title_div{
   float: left;
   overflow: hidden;
   width:125px;
   position: relative;
 
 }
-.title .title_loop .title_div img{
+ .title .title_loop .title_div img{
   float: left;
   width:125px;
   height:74px;
@@ -81,7 +81,7 @@
   float: left;
   margin-left: 10px;
 }
-.all li a{
+ .all li a{
   color:#000;
   padding-bottom: 10px;
 }
@@ -125,23 +125,27 @@
   color: #ccc;
   font-size: 12px;
 }
-.detail_div .title{
+.detail_div .title2{
   text-align: left;
+  width:200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top:10px;
 }
 .detail_div  .img1{
   width: 311px;
   height: 140px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .detail_div .praise{
   position: absolute;
-  left: 30px;
+  left: 60px;
   top:224px;
 }
 .detail_div .ellipsis{
   position: absolute;
-  left: 60px;
+  left: 90px;
   top:224px;
 }
 }

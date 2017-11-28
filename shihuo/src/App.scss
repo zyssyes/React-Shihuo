@@ -1,4 +1,13 @@
 #botter{
+  .bg{
+      p{
+        color:red !important;
+      }
+      i{
+        color:red !important;
+      }
+      
+  }
   #bot_ul{
     position: fixed;
     bottom: 0;
@@ -7,6 +16,15 @@
     overflow: hidden;
     li{
       float:left;
+      width:25%;
+      text-align:center;
+      p{
+        color:#3e3e3e;
+      }
+      i{
+        color:#3e3e3e;
+        font-size:20px;
+      }
     }
   }
 }

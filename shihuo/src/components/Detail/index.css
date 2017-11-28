@@ -119,21 +119,25 @@
   color: #ccc;
   font-size: 12px; }
 
-#Detail .detail_div .title {
+#Detail .detail_div .title2 {
   text-align: left;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-top: 10px; }
 
 #Detail .detail_div .img1 {
   width: 311px;
   height: 140px;
-  margin-left: 20px; }
+  margin-left: 50px; }
 
 #Detail .detail_div .praise {
   position: absolute;
-  left: 30px;
+  left: 60px;
   top: 224px; }
 
 #Detail .detail_div .ellipsis {
   position: absolute;
-  left: 60px;
+  left: 90px;
   top: 224px; }

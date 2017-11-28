@@ -1,3 +1,9 @@
+#botter .bg p {
+  color: red !important; }
+
+#botter .bg i {
+  color: red !important; }
+
 #botter #bot_ul {
   position: fixed;
   bottom: 0;
@@ -5,4 +11,11 @@
   width: 100%;
   overflow: hidden; }
   #botter #bot_ul li {
-    float: left; }
+    float: left;
+    width: 25%;
+    text-align: center; }
+    #botter #bot_ul li p {
+      color: #3e3e3e; }
+    #botter #bot_ul li i {
+      color: #3e3e3e;
+      font-size: 20px; }
