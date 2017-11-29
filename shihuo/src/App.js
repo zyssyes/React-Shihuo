@@ -12,6 +12,7 @@ import Detail from './components/Detail';
 import User from './components/user';
 import Regist from './components/regist';
 import Login from './components/login';
+import GoodsDetail from './components/GoodsDetail';
 import './App.css';
 
 
@@ -27,6 +28,7 @@ const App = () => (
         <Route  path="/user" component={User}/>
         <Route path="/regist" component={Regist}/>
         <Route path="/login" component={Login}/>
+        <Route path="/goodsdetail/:fid/:gid" component={GoodsDetail} />
       </Switch>
       <ul id='bot_ul'>
         <li ><NavLink activeClassName="bg" to="/home"><i className="iconfont">&#xe62b;</i><p>首页</p></NavLink></li>

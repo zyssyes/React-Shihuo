@@ -48,6 +48,14 @@
       "^/api": "/api"
       },
     "ws": true
+    },
+  "/app2": {
+    "target": "http://www.shihuo.cn",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/app2": "/app2"
+    },
+    "ws": true
     }
   }
 
