@@ -6,6 +6,10 @@ import {
 import './index.css'
 
 export default class Outdoor extends Component{
+	  getHight(key){
+  		sessionStorage.setItem('h_hight', document.documentElement.scrollTop||document.body.scrollTop)
+  		sessionStorage.setItem('key', 2)
+  	}
 	render(){
 		return(
 			<div id="outdoor">
@@ -23,7 +27,7 @@ export default class Outdoor extends Component{
 					{
 						this.props.show.map((item,index)=>{
 							return(
-								<div key={item.id}>
+								<div key={item.id} onClick={()=>this.getHight()}>
 									<Link to={'./goodsdetail/'+item.id+'/'+item.goods_id} >
 										<img src={item.img} />
 										<p>{item.title}</p>

@@ -16,12 +16,16 @@ class Home extends Component {
       mode: 'top',
       showList:[],
       showList2:[],
+      keyy:'1'
     };
     this.getData = this.getData.bind(this)
     this.getHight = this.getHight.bind(this)
   }
   getData(key){
-  	console.log(key)
+  	console.log(key);
+  	this.setState({
+  		keyy:key
+  	})
   	var that = this;
   	if(key == 2){
   		axios.get('/haitao/list?r=1&page=1&page_size=20')
@@ -40,8 +44,9 @@ class Home extends Component {
   	}
 
   }
-  getHight(){
+  getHight(key){
   	sessionStorage.setItem('h_hight', document.documentElement.scrollTop||document.body.scrollTop)
+  	sessionStorage.setItem('key', this.state.keyy)
   }
   componentDidMount(){
   	var that = this;

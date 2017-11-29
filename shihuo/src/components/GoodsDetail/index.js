@@ -21,6 +21,7 @@ export default class GoodsDetail extends Component{
 	  				goodsInfor:res.data.data.attr
 	  			})
 	  		})
+	  	document.getElementById('bot_ul').style.display="none";
 	  }
 	render(){
 		// var items=this.state.goodsInfor ? this.state.goodsInfor.content.map((item,index)=>{
@@ -28,7 +29,10 @@ export default class GoodsDetail extends Component{
 	 //                  				<div key={item.gid}><img src={item.img}/></div>
 	 //                  			 )
 	 //                  	})
-		// 			: null;
+		// 			: null
+		
+			
+		
 		var items=this.state.goodsInfor ? this.state.goodsInfor.content.map((item,index)=>{
 	                  		return(
 	                  				<div key={item.gid}><img src={item.img}/></div>
@@ -52,8 +56,22 @@ export default class GoodsDetail extends Component{
 	                </Carousel>
 	            </div>
 	            <p>价格：<span>{items2}</span></p>
+	            <div className='bar'>
+	            	<div>
+	            		<Icon type="phone" />
+	            		<p>客服</p>
+	            	</div>
+	            	<div>
+	            		<Icon type="user-add" />
+	            		<p>我的</p>
+	            	</div>
+	            	<span>加入购物车</span>
+	            	<span>立即购买</span>
+	            </div>
 			</div>
 
 			)
 	}
+
+
 }
