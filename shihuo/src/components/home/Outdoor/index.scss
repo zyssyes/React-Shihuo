@@ -1,0 +1,63 @@
+#outdoor{
+	.top{
+		overflow: hidden;
+		li{
+			height:60px;
+			width:75px;
+			margin-left:10px;
+			float: left;
+			text-align: center;
+			margin-top: 10px;
+			i{
+				height:40px;
+				line-height: 40px;
+				font-size:25px;
+				/*color:#f60;*/
+			}
+			p{
+				font-size:13px;
+				
+				height:20px;
+				line-height: 20px;
+			}
+
+		}
+	}
+
+	#pic{
+		width:100%;
+		margin-top: 10px;
+		overflow: hidden;
+	}
+
+		.show{
+		width:100%;
+		background: #f0f3f5;
+		overflow: hidden;
+		margin-bottom: 60px;
+		div{
+			background: #fff;
+			width:171px;
+			height:263px;
+			padding:7.5px;
+			margin:4px 8px;
+			float: left;
+			img{width: 100%}
+			p{
+				font-size:14px;
+				height:64px;
+			}
+			span{
+				height:40px;
+				line-height: 40px;
+			}
+			span:nth-of-type(1){
+				color:red;
+				font-size: 14px;
+			}
+			span:nth-of-type(2){
+				margin-left:30%;
+			}
+		}
+	}
+}

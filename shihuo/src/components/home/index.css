@@ -39,7 +39,8 @@
     #home .show div img {
       width: 100%; }
     #home .show div p {
-      font-size: 14px; }
+      font-size: 14px;
+      height: 63px; }
     #home .show div span {
       height: 40px;
       line-height: 40px; }

@@ -1,17 +1,40 @@
 import React,{Component} from 'react';
 import "./index.css";
-import { Tabs, Radio } from 'antd';
+import { Tabs } from 'antd';
 import { Carousel } from 'antd';
 import axios from 'axios'
+import Outdoor from './Outdoor'
 	
 const TabPane = Tabs.TabPane;
-class Home extends React.Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       mode: 'top',
-      showList:[]
+      showList:[],
+      showList2:[],
     };
+    this.getData = this.getData.bind(this)
+  }
+  getData(key){
+  	console.log(key)
+  	var that = this;
+  	if(key == 2){
+  		axios.get('/haitao/list?r=1&page=1&page_size=20')
+		.then((res)=>{
+			console.log(res)
+			that.setState({
+				showList2:res.data.data
+			})
+		})
+  	}
+  	if(key == 3){
+  		axios.get('/haitao/list?r=2&page=1&page_size=20')
+  		.then((res)=>{
+  			console.log(res)
+  		})
+  	}
+
   }
   componentDidMount(){
   	var that = this;
@@ -25,6 +48,7 @@ class Home extends React.Component {
   }
   handleModeChange = (e) => {
     const mode = e.target.value;
+
     this.setState({ mode });
   }
   render() {
@@ -37,7 +61,7 @@ class Home extends React.Component {
         <Tabs
           defaultActiveKey="1"
           tabPosition= "top"
-
+		  onChange={this.getData}
         >
           <TabPane tab="精选" key="1">
           	 <div className='loop'>
@@ -64,11 +88,9 @@ class Home extends React.Component {
                 </div>
         	</div>
           </TabPane>
-          <TabPane tab="户外运动" key="2">
-          	<ul>
-          		<li></li>
-          	</ul>
-
+          <TabPane tab="户外运动" key="2" >
+          			 <Outdoor show={this.state.showList2}></Outdoor>
+          		
           </TabPane>
           <TabPane tab="休闲鞋服" key="3">11</TabPane>
           <TabPane tab="饰品手表" key="4">11</TabPane>
