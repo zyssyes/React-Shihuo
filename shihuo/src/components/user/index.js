@@ -4,6 +4,14 @@ import 'antd/dist/antd.css'
 import './index.css';
 import Icon from 'antd/lib/icon';
 import axios from 'axios';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  NavLink,
+  Switch,
+  Redirect
+} from 'react-router-dom'
 class User extends Component {
   render() {
     return (
@@ -11,8 +19,8 @@ class User extends Component {
         <div className='top'>
           <div className='top_title'>
             <img src='../img/title.png' alt='图片' className='png1' />
-              <p className='left'>登录</p>
-              <p className='right'>注册</p>
+              <Link to="/login"><p className='left'>登录</p></Link>
+             <Link to="/regist"> <p className='right'>注册</p></Link>
               <p className='bottom'>金币 0</p>
           </div>
         </div>
