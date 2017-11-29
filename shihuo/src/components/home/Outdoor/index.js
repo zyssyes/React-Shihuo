@@ -1,5 +1,8 @@
 import React,{Component} from 'react';
 import Icon from 'antd/lib/icon';
+import {
+  Link
+} from 'react-router-dom';
 import './index.css'
 
 export default class Outdoor extends Component{
@@ -21,9 +24,11 @@ export default class Outdoor extends Component{
 						this.props.show.map((item,index)=>{
 							return(
 								<div key={item.id}>
-									<img src={item.img} />
-									<p>{item.title}</p>
-									<span>${item.price}</span><span>{item.business}</span>
+									<Link to={'./goodsdetail/'+item.id+'/'+item.goods_id} >
+										<img src={item.img} />
+										<p>{item.title}</p>
+										<span>${item.price}</span><span>{item.business}</span>
+									</Link>
 								</div>
 								)
 						})
