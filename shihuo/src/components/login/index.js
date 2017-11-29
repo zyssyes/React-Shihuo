@@ -4,47 +4,39 @@ import 'antd/dist/antd.css'
 import './index.css';
 import Icon from 'antd/lib/icon';
 import axios from 'axios';
-class User extends Component {
+class Regist extends Component {
   render() {
     return (
-      <div className="User" id='User'>
-        <div className='top'>
-          <div className='top_title'>
-            <img src='../img/title.png' alt='图片' className='png1' />
-              <p className='left'>登录</p>
-              <p className='right'>注册</p>
-              <p className='bottom'>金币 0</p>
+      <div className="Regist" id='Regist'>
+        <header className="common-header">
+          <span>后退</span>
+          <img src="https://passport.hupu.com/m/2/images/shihuo.png" alt=""/>
+        </header>
+        <div className='home-wrap'>
+          <div className='name'><Icon type="user"  className='name-Icon'/><input type='text' placeholder='请输入用户名'/></div>
+          <div className='password'><Icon type="lock" className='password-Icon'/><input type='password' placeholder='请输入密码'/></div>
+          <div className="form-item-btn ">
+            <input type="submit" value="注册" className="login-btn" dace-node="8000_login"/>
+            <input type="submit" value="登录" className="regist-btn" dace-node="8000_login"/>
           </div>
         </div>
-          <div className="menu_list">
-            <div className="tit"><span>我的识货</span></div>
-              <ul>
-                <li><img src="../img/1.png" alt=""/><p>我的收藏</p></li>
-                <li><img src="../img/2.png" alt=""/><p>我的晒物</p></li>
-                <li><img src="../img/3.png" alt=""/><p>我的礼品</p></li>
-              </ul>
+        <div className="other-login">
+          <i></i>
+          <div className="other-login-one">
+            <div  className="qq-login"><img src='../img/qq.png' alt=''/></div>
           </div>
-          <div className="menu_list">
-            <div className="tit"><span>我的海淘</span></div>
-              <ul>
-                <li><img src="../img/cart.png" alt=""/><p>购物车</p></li>
-                <li><img src="../img/4.png" alt=""/><p>海淘订单</p></li>
-                <li><img src="../img/5.png" alt=""/><p>海淘客服</p></li>
-                <li><img src="../img/6.png" alt=""/><p>地址管理</p></li>
-              </ul>
+          <i></i>
+          <div className="other-login-two">
+            <div className="phone-login"><img src='../img/phone.png' alt=''/></div>
           </div>
-          <div className="menu_list">
-            <div className="tit"><span>识货必备</span></div>
-              <ul>
-                <li><img src="../img/7.png" alt=""/><p>推荐店铺</p></li>
-                <li><img src="../img/8.png" alt=""/><p>装备鉴定</p></li>
-                <li><img src="../img/9.png" alt=""/><p>黑科技选鞋</p></li>
-              </ul>
-            </div>
-        
+          <i></i>
+        </div>
+        <span className='span1'>QQ帐号登录</span>
+        <span className='span2'>手机短信登录</span>
       </div>
     );
    }
 }
 
-export default User;
+export default Regist;
+
