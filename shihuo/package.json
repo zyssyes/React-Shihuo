@@ -38,7 +38,15 @@
     "changeOrigin": true,
     "pathRewrite": {
       "^/haitao": "/haitao"
+      },
+    "ws": true
     },
+  "/api": {
+    "target": "http://localhost:3001",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": "/api"
+      },
     "ws": true
     },
   "/app2": {
